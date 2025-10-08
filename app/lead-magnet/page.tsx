@@ -14,6 +14,8 @@ export default function LeadMagnet() {
   const [email, setEmail] = useState('');
   const [agreed, setAgreed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [wantsSMS, setWantsSMS] = useState(false);
+  const [phone, setPhone] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -94,7 +96,7 @@ export default function LeadMagnet() {
             >
               {/* Short description */}
               <p className="text-lg text-foreground-dark mb-6">
-                <strong>Pobierz darmowy PDF</strong> z 5 starannie wyselekcjonowanymi zagadkami logicznymi dla dzieci w wieku 8-12 lat.
+                <strong>Pobierz darmowy PDF</strong> z 5 starannie wyselekcjonowanymi zagadkami logicznymi dla osób w wieku 8-99 lat.
               </p>
 
               {/* Benefits list */}
@@ -136,6 +138,33 @@ export default function LeadMagnet() {
                   <div className="flex items-start gap-2">
                     <input
                       type="checkbox"
+                      id="sms"
+                      checked={wantsSMS}
+                      onChange={(e) => setWantsSMS(e.target.checked)}
+                      className="mt-1 w-4 h-4"
+                    />
+                    <label htmlFor="sms" className="text-sm text-foreground">
+                      Chcę otrzymać powiadomienie SMS o premierze książki
+                    </label>
+                  </div>
+
+                  {wantsSMS && (
+                    <div>
+                      <input
+                        type="tel"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                        placeholder="Numer telefonu (np. 123 456 789)"
+                        required={wantsSMS}
+                        autoComplete="tel"
+                        className="w-full px-4 py-4 text-lg border-2 border-soft-blue/30 rounded-lg focus:border-green focus:outline-none transition-colors"
+                      />
+                    </div>
+                  )}
+
+                  <div className="flex items-start gap-2">
+                    <input
+                      type="checkbox"
                       id="rodo"
                       checked={agreed}
                       onChange={(e) => setAgreed(e.target.checked)}
@@ -170,7 +199,7 @@ export default function LeadMagnet() {
               <div className="mt-6 text-center">
                 <p className="text-sm text-foreground font-semibold flex items-center justify-center gap-2">
                   <Star className="w-4 h-4 text-honey fill-honey" />
-                  Dołącz do ponad 5 000 rodziców, którzy już pobrali
+                  Dołącz do ponad 500 rodziców, którzy już pobrali
                 </p>
               </div>
             </motion.div>

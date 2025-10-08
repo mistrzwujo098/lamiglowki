@@ -2,11 +2,18 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ShoppingCart } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingCTA() {
+  const pathname = usePathname();
   const { scrollYProgress } = useScroll();
   const opacity = useTransform(scrollYProgress, [0.1, 0.15, 0.9, 0.95], [0, 1, 1, 0]);
   const y = useTransform(scrollYProgress, [0.1, 0.15], [100, 0]);
+
+  // Hide on lead magnet page
+  if (pathname === '/lead-magnet' || pathname === '/lead-magnet/') {
+    return null;
+  }
 
   return (
     <>
