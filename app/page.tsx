@@ -1562,7 +1562,7 @@ export default function Home() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="relative max-w-4xl max-h-[90vh] w-full"
+              className="relative max-w-3xl max-h-[85vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <Image
@@ -1570,7 +1570,7 @@ export default function Home() {
                 alt="Powiększony fragment"
                 width={1200}
                 height={1500}
-                className="w-full h-auto object-contain rounded-lg"
+                className="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg"
               />
             </motion.div>
           </motion.div>
