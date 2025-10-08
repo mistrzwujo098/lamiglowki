@@ -538,9 +538,12 @@ export default function Home() {
             viewport={{ once: true }}
             variants={stagger}
           >
-            <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
-              Dla kogo jest ta książka?
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-6 text-center text-foreground">
+              Dla osób w wieku 8-99 lat
             </motion.h2>
+            <motion.p variants={fadeInUp} className="text-xl text-center text-foreground-dark mb-12 font-semibold">
+              Idealna dla każdego, kto lubi ruszyć głową!
+            </motion.p>
 
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Dla kogo */}
@@ -550,79 +553,78 @@ export default function Home() {
                 whileHover={{ borderColor: "rgba(149, 181, 84, 0.5)" }}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-green/5 rounded-full -mr-16 -mt-16"></div>
-                <h3 className="text-2xl font-bold mb-6 text-green flex items-center gap-3 relative">
-                  <CheckCircle className="w-8 h-8" />
-                  Idealna dla:
+                <h3 className="text-xl font-bold mb-4 text-green relative">
+                  Ta książka to nie tylko zabawa dla dzieci — to trening kreatywnego myślenia dla całej rodziny.
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-green text-xl">✓</span>
                     <div>
-                      <strong className="text-foreground-dark">Dzieci 6-12 lat</strong>
-                      <p className="text-foreground text-sm">Trzy poziomy trudności dostosowane do wieku</p>
+                      <strong className="text-foreground-dark">Dzieci od 8 lat</strong>
+                      <p className="text-foreground text-sm">Nauka logicznego myślenia przez zabawę</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green text-xl">✓</span>
                     <div>
-                      <strong className="text-foreground-dark">Rodziców szukających alternatywy dla ekranów</strong>
-                      <p className="text-foreground text-sm">15 minut jakościowego czasu razem</p>
+                      <strong className="text-foreground-dark">Rodzice</strong>
+                      <p className="text-foreground text-sm">Sposób na wspólny czas bez telefonów i tabletów</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green text-xl">✓</span>
                     <div>
-                      <strong className="text-foreground-dark">Nauczycieli i wychowawców</strong>
-                      <p className="text-foreground text-sm">Rozgrzewki na lekcje, materiał dodatkowy</p>
+                      <strong className="text-foreground-dark">Dorośli</strong>
+                      <p className="text-foreground text-sm">Idealny reset dla mózgu po pracy i ćwiczenie nieszablonowego myślenia</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green text-xl">✓</span>
                     <div>
-                      <strong className="text-foreground-dark">Scenariusze użycia</strong>
-                      <p className="text-foreground text-sm">Przed snem, w podróży, w aucie, podczas weekendu</p>
+                      <strong className="text-foreground-dark">Nauczyciele</strong>
+                      <p className="text-foreground text-sm">Gotowy zestaw rozgrzewek, które ożywią każdą lekcję</p>
                     </div>
                   </li>
                 </ul>
+                <div className="mt-6 p-4 bg-gradient-to-br from-green/10 to-beige/30 rounded-xl border border-green/20">
+                  <p className="text-sm text-foreground-dark">
+                    <strong>Rozwiązuj w dowolnym momencie:</strong> w podróży, w aucie, przy kawie lub przed snem.
+                  </p>
+                </div>
               </motion.div>
 
               {/* Nie dla kogo */}
               <motion.div variants={fadeInUp} className="bg-white p-8 rounded-2xl shadow-lg border-2 border-warm-gray/20">
                 <h3 className="text-2xl font-bold mb-6 text-warm-gray flex items-center gap-3">
                   <span className="text-3xl">⚠️</span>
-                  Może nie pasować, jeśli:
+                  Może nie być dla Ciebie, jeśli:
                 </h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-warm-gray text-xl">×</span>
                     <div>
-                      <p className="text-warm-gray">Szukasz tradycyjnych ćwiczeń matematycznych z podstawówki</p>
+                      <p className="text-warm-gray">Unikasz łamigłówek jak ognia 😉</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm-gray text-xl">×</span>
                     <div>
-                      <p className="text-warm-gray">Potrzebujesz książki z gotowymi odpowiedziami bez wysiłku</p>
+                      <p className="text-warm-gray">Wolisz aplikacje, które same myślą za Ciebie</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm-gray text-xl">×</span>
                     <div>
-                      <p className="text-warm-gray">Oczekujesz natychmiastowych rezultatów - tu liczy się proces</p>
+                      <p className="text-warm-gray">Szukasz prostych zadań do mechanicznego wypełniania</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-warm-gray text-xl">×</span>
                     <div>
-                      <p className="text-warm-gray">Wolisz aplikacje z mikrotransakcjami i notyfikacjami</p>
+                      <p className="text-warm-gray">Nie chcesz dać się wciągnąć w zabawę, która naprawdę rozwija mózg</p>
                     </div>
                   </li>
                 </ul>
-                <div className="mt-6 p-4 bg-beige rounded-lg">
-                  <p className="text-sm text-foreground-dark italic">
-                    Uczciwie zawężamy grupę docelową, bo chcemy zadowolonych klientów, nie zwrotów
-                  </p>
-                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -658,7 +660,7 @@ export default function Home() {
               <motion.div variants={fadeInUp} className="text-center p-6 bg-cream rounded-2xl border border-soft-blue/30">
                 <div className="text-5xl font-bold text-honey mb-2">120</div>
                 <div className="text-lg font-semibold text-foreground-dark mb-2">Zagadek logicznych</div>
-                <p className="text-sm text-foreground">Różnorodne typy: matematyczne, przestrzenne, sekwencje, rebúsy</p>
+                <p className="text-sm text-foreground">Różne typy zadań: obrazkowe, słowne, przestrzenne, matematyczne</p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="text-center p-6 bg-cream rounded-2xl border border-soft-blue/30">
@@ -682,7 +684,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey" />
                     Część 1: Rozgrzewka (★)
                   </h4>
-                  <p className="text-warm-gray text-sm mb-4">40 zagadek na start - budowanie pewności siebie i zaufania do własnych umiejętności</p>
+                  <p className="text-warm-gray text-sm mb-4">Budowanie pewności siebie i zaufania do własnych umiejętności</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
@@ -690,7 +692,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey" />
                     Część 2: Wyzwanie (★★)
                   </h4>
-                  <p className="text-warm-gray text-sm mb-4">40 zagadek średniej trudności - rozwijanie strategii i nieszablonowego myślenia</p>
+                  <p className="text-warm-gray text-sm mb-4">Rozwijanie strategii i nieszablonowego myślenia</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
@@ -699,7 +701,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey fill-honey" />
                     Część 3: Mistrzostwo (★★★)
                   </h4>
-                  <p className="text-warm-gray text-sm mb-4">40 zagadek dla prawdziwych łamigłówkowiczów - trening wytrwałości i głębokiej koncentracji</p>
+                  <p className="text-warm-gray text-sm mb-4">Trening wytrwałości i głębokiej koncentracji dla prawdziwych łamigłówkowiczów</p>
                 </div>
                 <div className="bg-white/60 p-4 rounded-xl">
                   <h4 className="font-semibold text-foreground mb-2">Bonus:</h4>
@@ -707,7 +709,7 @@ export default function Home() {
                     <li>✓ Instrukcja dla rodziców</li>
                     <li>✓ Wskazówki dla nauczycieli</li>
                     <li>✓ Miejsca na notatki</li>
-                    <li>✓ Certyfikat ukończenia</li>
+                    <li>✓ Certyfikat Bystrej Główki dla dziecka do wydrukowania</li>
                   </ul>
                 </div>
               </div>
@@ -810,7 +812,6 @@ export default function Home() {
                 <span>👀 Brak zmęczenia oczu</span>
                 <span>🤝 Budowanie więzi</span>
                 <span>♻️ Można przekazać dalej</span>
-                <span>🌳 Papier FSC</span>
               </div>
             </div>
           </motion.div>
@@ -841,7 +842,7 @@ export default function Home() {
                   <Star className="w-6 h-6 text-honey" />
                   <h3 className="text-xl font-bold text-foreground">Poziom ★</h3>
                 </div>
-                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Dzieci 5-7 lat lub starsze na rozgrzewkę</p>
+                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Dzieci 8-12 lat lub starsze na rozgrzewkę</p>
                 <p className="text-warm-gray mb-3"><strong>Cechy:</strong> Kolorowe, intuicyjne, wizualne zagadki</p>
                 <p className="text-warm-gray text-sm italic">Buduje pewność siebie i zaufanie do własnych umiejętności</p>
               </motion.div>
@@ -852,7 +853,7 @@ export default function Home() {
                   <Star className="w-6 h-6 text-honey" />
                   <h3 className="text-xl font-bold text-foreground">Poziom ★★</h3>
                 </div>
-                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Dzieci 7-10 lat</p>
+                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Dzieci 12-16 lat</p>
                 <p className="text-warm-gray mb-3"><strong>Cechy:</strong> Wymagają myślenia o krok dalej</p>
                 <p className="text-warm-gray text-sm italic">Najbardziej uniwersalny poziom - tu spędzi się najwięcej czasu</p>
               </motion.div>
@@ -864,7 +865,7 @@ export default function Home() {
                   <Star className="w-6 h-6 text-honey fill-honey" />
                   <h3 className="text-xl font-bold text-foreground">Poziom ★★★</h3>
                 </div>
-                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Dzieci 10+ lat (i rodzice!)</p>
+                <p className="text-warm-gray mb-3"><strong>Dla kogo:</strong> Młodzież 16+ lat (i rodzice!)</p>
                 <p className="text-warm-gray mb-3"><strong>Cechy:</strong> Prawdziwe wyzwania logiczne</p>
                 <p className="text-warm-gray text-sm italic">Niektóre zagadki mogą zająć kilka dni - i to jest OK!</p>
               </motion.div>
@@ -972,7 +973,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey fill-honey" />
                     <span className="text-foreground-dark text-lg font-bold">Poziom 1</span>
                   </div>
-                  <span className="text-xs bg-beige px-3 py-1 rounded-full text-foreground-dark font-medium">7-9 lat</span>
+                  <span className="text-xs bg-beige px-3 py-1 rounded-full text-foreground-dark font-medium">8-12 lat</span>
                 </div>
                 <div className="bg-gradient-to-br from-cream to-background p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-soft-blue/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed">
@@ -999,13 +1000,14 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey fill-honey" />
                     <span className="text-foreground-dark text-lg font-bold">Poziom 2</span>
                   </div>
-                  <span className="text-xs bg-pink/30 px-3 py-1 rounded-full text-foreground-dark font-medium">9-11 lat</span>
+                  <span className="text-xs bg-pink/30 px-3 py-1 rounded-full text-foreground-dark font-medium">12-16 lat</span>
                 </div>
                 <div className="bg-gradient-to-br from-pink/10 to-beige/30 p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-pink/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed text-sm">
-                    Martyna ma w domu psa, kota i królika. Kot i królik ważą razem 8 kg.
-                    Kot i pies ważą 19 kg, a królik z psem - 17 kg.
-                    Ile waży każde zwierzę?
+                    Na polu rosną: marchewki, ziemniaki i buraki.<br/>
+                    Marchewek jest o 30 więcej niż buraków.<br/>
+                    Ziemniaków jest dwa razy więcej niż marchewek.<br/>
+                    Razem rośnie 110 warzyw. Ile jest każdego rodzaju?
                   </p>
                 </div>
                 <details className="cursor-pointer group">
@@ -1014,7 +1016,7 @@ export default function Home() {
                     Zobacz odpowiedź
                   </summary>
                   <p className="text-sm text-foreground mt-3 pl-6 italic">
-                    Odpowiedź: Kot - 5 kg, Królik - 3 kg, Pies - 14 kg
+                    Odpowiedź: Buraki - 10, Marchewki - 40, Ziemniaki - 60
                   </p>
                 </details>
               </motion.div>
@@ -1027,7 +1029,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey fill-honey" />
                     <span className="text-foreground-dark text-lg font-bold">Poziom 3</span>
                   </div>
-                  <span className="text-xs bg-honey/30 px-3 py-1 rounded-full text-foreground-dark font-medium">11+ lat</span>
+                  <span className="text-xs bg-honey/30 px-3 py-1 rounded-full text-foreground-dark font-medium">16+ lat</span>
                 </div>
                 <div className="bg-gradient-to-br from-honey/10 to-background p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-honey/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed text-sm">
@@ -1080,24 +1082,24 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-bold mb-4 text-foreground flex items-center gap-2">
                     <BookOpen className="w-6 h-6 text-soft-blue" />
-                    Scenariusze 45-minutowych zajęć
+                    Pomoc dla nauczycieli
                   </h3>
                   <ul className="space-y-3 text-warm-gray">
                     <li className="flex gap-2">
                       <span>✓</span>
-                      <span>Rozgrzewka na początek lekcji (5-10 min)</span>
+                      <span>Szybka rozgrzewka na lekcję</span>
                     </li>
                     <li className="flex gap-2">
                       <span>✓</span>
-                      <span>Praca w grupach nad zagadką</span>
+                      <span>Zagadki do pracy w grupach</span>
                     </li>
                     <li className="flex gap-2">
                       <span>✓</span>
-                      <span>Turnieje klasowe i międzyklasowe</span>
+                      <span>Gotowy materiał na zastępstwo</span>
                     </li>
                     <li className="flex gap-2">
                       <span>✓</span>
-                      <span>Materiał na zastępstwa</span>
+                      <span>Inspiracja do zajęć rozwijających logiczne myślenie</span>
                     </li>
                   </ul>
                 </div>
