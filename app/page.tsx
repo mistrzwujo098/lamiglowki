@@ -155,7 +155,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm">
                   <div className="flex items-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-sm border border-soft-blue/20 whitespace-nowrap">
                     <span className="text-green text-sm sm:text-base">✓</span>
-                    <span className="text-foreground-dark font-semibold">Dla dzieci 6-12 lat</span>
+                    <span className="text-foreground-dark font-semibold">Dla osób w wieku 8-99 lat</span>
                   </div>
                   <div className="flex items-center gap-1.5 sm:gap-2 bg-white/95 backdrop-blur-sm px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-sm border border-soft-blue/20 whitespace-nowrap">
                     <span className="text-green text-sm sm:text-base">📚</span>
