@@ -3,6 +3,7 @@ import "./globals.css";
 import TableOfContents from "./components/TableOfContents";
 import ScrollProgress from "./components/ScrollProgress";
 import FloatingCTA from "./components/FloatingCTA";
+import ExitIntentPopup from "./components/ExitIntentPopup";
 
 export const metadata: Metadata = {
   title: "Łamigłówki dla bystrej główki | Rozwój logicznego myślenia dzieci",
@@ -115,6 +116,7 @@ export default function RootLayout({
         <ScrollProgress />
         {/* <TableOfContents /> */}
         <FloatingCTA />
+        <ExitIntentPopup />
         {children}
       </body>
     </html>
