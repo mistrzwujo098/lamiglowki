@@ -294,18 +294,6 @@ export default function ThankYou() {
               <span key={i} className="text-3xl">⭐</span>
             ))}
           </div>
-
-          {/* Book Cover */}
-          <div className="mt-12">
-            <div className="relative w-64 h-80 mx-auto">
-              <Image
-                src="/images/okladka przodem.webp"
-                alt="Książka Łamigłówki dla bystrej główki"
-                fill
-                className="object-contain drop-shadow-2xl"
-              />
-            </div>
-          </div>
         </div>
       </section>
 
