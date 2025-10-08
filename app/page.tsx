@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { CheckCircle, Star, BookOpen, Users, Award, Clock } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { CheckCircle, Star, BookOpen, Users, Award, Clock, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -18,6 +19,30 @@ const stagger = {
 };
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [activeSection, setActiveSection] = useState('hero');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['hero', 'problem', 'solution', 'benefits', 'for-who', 'inside', 'examples', 'pakiety', 'faq', 'author'];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const sectionId of sections) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const { offsetTop, offsetHeight } = section;
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   const packages = [
     {
       name: 'Pakiet startowy',
@@ -113,6 +138,50 @@ export default function Home() {
       <div className="bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md">
         🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie • Wysyłka po 12 listopada 📦
       </div>
+
+      {/* Side Navigation */}
+      <nav className="hidden xl:block fixed right-8 top-1/2 -translate-y-1/2 z-40">
+        <ul className="space-y-4">
+          {[
+            { id: 'hero', label: 'Start' },
+            { id: 'problem', label: 'Problem' },
+            { id: 'solution', label: 'Rozwiązanie' },
+            { id: 'benefits', label: 'Korzyści' },
+            { id: 'for-who', label: 'Dla kogo' },
+            { id: 'inside', label: 'Zawartość' },
+            { id: 'examples', label: 'Przykłady' },
+            { id: 'pakiety', label: 'Pakiety' },
+            { id: 'faq', label: 'FAQ' },
+            { id: 'author', label: 'Autor' },
+          ].map((section) => (
+            <li key={section.id}>
+              <a
+                href={`#${section.id}`}
+                className={`block group relative transition-all duration-300 ${
+                  activeSection === section.id ? 'scale-110' : ''
+                }`}
+              >
+                <span
+                  className={`absolute right-full mr-3 px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
+                    activeSection === section.id
+                      ? 'opacity-100 translate-x-0 bg-green text-white'
+                      : 'opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 bg-foreground-dark text-white'
+                  }`}
+                >
+                  {section.label}
+                </span>
+                <div
+                  className={`w-3 h-3 rounded-full border-2 transition-all duration-300 ${
+                    activeSection === section.id
+                      ? 'bg-green border-green scale-125'
+                      : 'bg-white border-foreground-dark/30 group-hover:border-green group-hover:scale-110'
+                  }`}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       {/* Hero Section */}
       <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-background via-ivory to-cream">
@@ -928,8 +997,9 @@ export default function Home() {
                 <motion.div
                   key={index}
                   variants={fadeInUp}
-                  className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all group"
+                  className="bg-white p-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all group cursor-pointer"
                   whileHover={{ y: -8, scale: 1.02 }}
+                  onClick={() => setSelectedImage(example.src)}
                 >
                   <div className="relative overflow-hidden rounded-xl mb-3">
                     <Image
@@ -1470,6 +1540,42 @@ export default function Home() {
           Zamawiam książkę
         </a>
       </motion.div>
+
+      {/* Image Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+              onClick={() => setSelectedImage(null)}
+              aria-label="Zamknij"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="relative max-w-4xl max-h-[90vh] w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={selectedImage}
+                alt="Powiększony fragment"
+                width={1200}
+                height={1500}
+                className="w-full h-auto object-contain rounded-lg"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
