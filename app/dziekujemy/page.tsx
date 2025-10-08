@@ -287,7 +287,7 @@ export default function ThankYou() {
       <section className="py-12">
         <div className="container mx-auto px-4 max-w-4xl text-center">
           <p className="text-foreground-dark font-semibold mb-4">
-            Zobacz czemu ponad 5 000 rodziców nam ufa
+            Zobacz czemu ponad 500 rodziców nam ufa
           </p>
           <div className="flex justify-center gap-2 mb-8">
             {[...Array(5)].map((_, i) => (

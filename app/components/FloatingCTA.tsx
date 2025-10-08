@@ -10,8 +10,9 @@ export default function FloatingCTA() {
   const opacity = useTransform(scrollYProgress, [0.1, 0.15, 0.9, 0.95], [0, 1, 1, 0]);
   const y = useTransform(scrollYProgress, [0.1, 0.15], [100, 0]);
 
-  // Hide on lead magnet page
-  if (pathname === '/lead-magnet' || pathname === '/lead-magnet/') {
+  // Hide on lead magnet and thank you pages
+  if (pathname === '/lead-magnet' || pathname === '/lead-magnet/' ||
+      pathname === '/dziekujemy' || pathname === '/dziekujemy/') {
     return null;
   }
 
