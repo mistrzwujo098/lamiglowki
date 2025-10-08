@@ -1,0 +1,1786 @@
+{
+  "config": {
+    "rootDir": "/Users/kacperczaczyk/Documents/lamiglowki",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/kacperczaczyk/Documents/lamiglowki/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/kacperczaczyk/Documents/lamiglowki",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.0",
+    "workers": 7,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/presale.spec.ts",
+      "file": "tests/presale.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Presale Page - Critical Tests",
+          "file": "tests/presale.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Topbar - Presale Message",
+              "file": "tests/presale.spec.ts",
+              "line": 12,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display topbar with presale message and delivery date",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 290,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:11.748Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-97ee682419656ab7287f",
+                  "file": "tests/presale.spec.ts",
+                  "line": 13,
+                  "column": 9
+                },
+                {
+                  "title": "should remain sticky on scroll",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 277,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:12.093Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-d944c053cd1184820ccd",
+                  "file": "tests/presale.spec.ts",
+                  "line": 30,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Package Buttons - SalesCRM Links",
+              "file": "tests/presale.spec.ts",
+              "line": 43,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have exactly 3 packages displayed",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5351,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.bg-white.rounded-2xl.p-6')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.bg-white.rounded-2xl.p-6')\u001b[22m\n\u001b[2m    9 × locator resolved to 5 elements\u001b[22m\n\u001b[2m      - unexpected value \"5\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.bg-white.rounded-2xl.p-6')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.bg-white.rounded-2xl.p-6')\u001b[22m\n\u001b[2m    9 × locator resolved to 5 elements\u001b[22m\n\u001b[2m      - unexpected value \"5\"\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:50:34",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 34,
+                              "line": 50
+                            },
+                            "snippet": "  48 |       // Count package cards\n  49 |       const packageCards = page.locator('div.bg-white.rounded-2xl.p-6');\n> 50 |       await expect(packageCards).toHaveCount(3);\n     |                                  ^\n  51 |     });\n  52 |\n  53 |     test('Package 1 (59 zł) - should display correctly and link to SalesCRM', async ({ page }) => {"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 34,
+                                "line": 50
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('div.bg-white.rounded-2xl.p-6')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('div.bg-white.rounded-2xl.p-6')\u001b[22m\n\u001b[2m    9 × locator resolved to 5 elements\u001b[22m\n\u001b[2m      - unexpected value \"5\"\u001b[22m\n\n\n  48 |       // Count package cards\n  49 |       const packageCards = page.locator('div.bg-white.rounded-2xl.p-6');\n> 50 |       await expect(packageCards).toHaveCount(3);\n     |                                  ^\n  51 |     });\n  52 |\n  53 |     test('Package 1 (59 zł) - should display correctly and link to SalesCRM', async ({ page }) => {\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:50:34"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:12.376Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-e7372-xactly-3-packages-displayed/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 34,
+                            "line": 50
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-1674ace5d11dd13bb2fc",
+                  "file": "tests/presale.spec.ts",
+                  "line": 44,
+                  "column": 9
+                },
+                {
+                  "title": "Package 1 (59 zł) - should display correctly and link to SalesCRM",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5389,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=59 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"59 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=59 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"59 zł💳 Kup teraz\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=59 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"59 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=59 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"59 zł💳 Kup teraz\"\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:66:30",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 30,
+                              "line": 66
+                            },
+                            "snippet": "  64 |\n  65 |       // Check features\n> 66 |       await expect(package1).toContainText('Książka w formie papierowej (wysyłka po 12 listopada)');\n     |                              ^\n  67 |       await expect(package1).toContainText('Certyfikat imienny dla dziecka');\n  68 |       await expect(package1).toContainText('Kilka rozwiązań video');\n  69 |"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 30,
+                                "line": 66
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=59 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"59 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=59 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"59 zł💳 Kup teraz\"\u001b[22m\n\n\n  64 |\n  65 |       // Check features\n> 66 |       await expect(package1).toContainText('Książka w formie papierowej (wysyłka po 12 listopada)');\n     |                              ^\n  67 |       await expect(package1).toContainText('Certyfikat imienny dla dziecka');\n  68 |       await expect(package1).toContainText('Kilka rozwiązań video');\n  69 |\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:66:30"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:17.971Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-59f8a-rectly-and-link-to-SalesCRM/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 30,
+                            "line": 66
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-4378194f5780297f022e",
+                  "file": "tests/presale.spec.ts",
+                  "line": 53,
+                  "column": 9
+                },
+                {
+                  "title": "Package 2 (99 zł) - MOST POPULAR - should display correctly and link to SalesCRM",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 400,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=99 zł').locator('..')\nExpected substring: \u001b[32m\"99 zł\"\u001b[39m\nError: strict mode violation: locator('text=99 zł').locator('..') resolved to 2 elements:\n    1) <div class=\"flex flex-col gap-3\">…</div> aka getByText('99 zł💳 Kup teraz', { exact: true })\n    2) <div class=\"flex flex-col gap-3\">…</div> aka getByText('199 zł💳 Kup teraz')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=99 zł').locator('..')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=99 zł').locator('..')\nExpected substring: \u001b[32m\"99 zł\"\u001b[39m\nError: strict mode violation: locator('text=99 zł').locator('..') resolved to 2 elements:\n    1) <div class=\"flex flex-col gap-3\">…</div> aka getByText('99 zł💳 Kup teraz', { exact: true })\n    2) <div class=\"flex flex-col gap-3\">…</div> aka getByText('199 zł💳 Kup teraz')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=99 zł').locator('..')\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:86:30",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 30,
+                              "line": 86
+                            },
+                            "snippet": "  84 |\n  85 |       // Check price\n> 86 |       await expect(package2).toContainText('99 zł');\n     |                              ^\n  87 |\n  88 |       // Check value badge\n  89 |       await expect(page.locator('text=💡 Najpopularniejszy')).toBeVisible();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 30,
+                                "line": 86
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=99 zł').locator('..')\nExpected substring: \u001b[32m\"99 zł\"\u001b[39m\nError: strict mode violation: locator('text=99 zł').locator('..') resolved to 2 elements:\n    1) <div class=\"flex flex-col gap-3\">…</div> aka getByText('99 zł💳 Kup teraz', { exact: true })\n    2) <div class=\"flex flex-col gap-3\">…</div> aka getByText('199 zł💳 Kup teraz')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=99 zł').locator('..')\u001b[22m\n\n\n  84 |\n  85 |       // Check price\n> 86 |       await expect(package2).toContainText('99 zł');\n     |                              ^\n  87 |\n  88 |       // Check value badge\n  89 |       await expect(page.locator('text=💡 Najpopularniejszy')).toBeVisible();\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:86:30"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:23.658Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-8ee2c-rectly-and-link-to-SalesCRM/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 30,
+                            "line": 86
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-6f4bc25d02065ef63068",
+                  "file": "tests/presale.spec.ts",
+                  "line": 76,
+                  "column": 9
+                },
+                {
+                  "title": "Package 3 (199 zł) - should display correctly and link to SalesCRM",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5380,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=199 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"199 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=199 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"199 zł💳 Kup teraz\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=199 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"199 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=199 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"199 zł💳 Kup teraz\"\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:120:30",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 30,
+                              "line": 120
+                            },
+                            "snippet": "  118 |\n  119 |       // Check all 6 features\n> 120 |       await expect(package3).toContainText('Książka w formie papierowej (wysyłka po 12 listopada)');\n      |                              ^\n  121 |       await expect(package3).toContainText('Certyfikat imienny dla dziecka');\n  122 |       await expect(package3).toContainText('Kilka rozwiązań video');\n  123 |       await expect(package3).toContainText('eBook do wydrukowania');"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 30,
+                                "line": 120
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=199 zł').locator('..')\nExpected substring: \u001b[32m\"Książka w formie papierowej (wysyłka po 12 listopada)\"\u001b[39m\nReceived string:    \u001b[31m\"199 zł💳 Kup teraz\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=199 zł').locator('..')\u001b[22m\n\u001b[2m    9 × locator resolved to <div class=\"flex flex-col gap-3\">…</div>\u001b[22m\n\u001b[2m      - unexpected value \"199 zł💳 Kup teraz\"\u001b[22m\n\n\n  118 |\n  119 |       // Check all 6 features\n> 120 |       await expect(package3).toContainText('Książka w formie papierowej (wysyłka po 12 listopada)');\n      |                              ^\n  121 |       await expect(package3).toContainText('Certyfikat imienny dla dziecka');\n  122 |       await expect(package3).toContainText('Kilka rozwiązań video');\n  123 |       await expect(package3).toContainText('eBook do wydrukowania');\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:120:30"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:24.351Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-d8bbc-rectly-and-link-to-SalesCRM/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 30,
+                            "line": 120
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-ba69a2f458fb67681afb",
+                  "file": "tests/presale.spec.ts",
+                  "line": 107,
+                  "column": 9
+                },
+                {
+                  "title": "all package buttons should have correct SalesCRM URL",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 352,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:30.032Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-f3af2d71f185bde265c1",
+                  "file": "tests/presale.spec.ts",
+                  "line": 133,
+                  "column": 9
+                },
+                {
+                  "title": "package buttons should be clickable and styled correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 344,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:30.439Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-2f0d7552212b9c938428",
+                  "file": "tests/presale.spec.ts",
+                  "line": 149,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "NO False Testimonials/Reviews",
+              "file": "tests/presale.spec.ts",
+              "line": 164,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should NOT display fake star ratings in hero section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 274,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:30.788Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-01eb3382b3d8c1025f1e",
+                  "file": "tests/presale.spec.ts",
+                  "line": 165,
+                  "column": 9
+                },
+                {
+                  "title": "should NOT display fake testimonials from customers",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 270,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:31.067Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-03147846360fdcf11e49",
+                  "file": "tests/presale.spec.ts",
+                  "line": 180,
+                  "column": 9
+                },
+                {
+                  "title": "should NOT display before/after customer stories",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 267,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:31.341Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-3d479cc70e394a259658",
+                  "file": "tests/presale.spec.ts",
+                  "line": 195,
+                  "column": 9
+                },
+                {
+                  "title": "should NOT display customer reviews section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 228,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:31.612Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-859501480176ffa9e03e",
+                  "file": "tests/presale.spec.ts",
+                  "line": 211,
+                  "column": 9
+                },
+                {
+                  "title": "presale page should focus on presale messaging, not customer feedback",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 274,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=PRZEDSPRZEDAŻ')\nExpected: visible\nError: strict mode violation: locator('text=PRZEDSPRZEDAŻ') resolved to 6 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <p class=\"text-sm font-semibold text-foreground-dark\">🎉 Przedsprzedaż - ograniczona liczba egzemplarzy</p> aka getByText('🎉 Przedsprzedaż -')\n    3) <a tabindex=\"0\" href=\"#pakiety\" class=\"bg-foreground-dark hover:bg-foreground text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-all hover:shadow-xl hover:scale-105 border-2 border-honey\">Zamów w przedsprzedaży</a> aka getByRole('link', { name: 'Zamów w przedsprzedaży' })\n    4) <p class=\"text-sm font-semibold text-foreground-dark\">🎯 PRZEDSPRZEDAŻ</p> aka getByText('🎯 PRZEDSPRZEDAŻ', { exact: true })\n    5) <p class=\"text-xl text-foreground mb-4\">Zamów teraz w przedsprzedaży i ciesz się najlepsz…</p> aka getByText('Zamów teraz w przedsprzedaży')\n    6) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=PRZEDSPRZEDAŻ')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=PRZEDSPRZEDAŻ')\nExpected: visible\nError: strict mode violation: locator('text=PRZEDSPRZEDAŻ') resolved to 6 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <p class=\"text-sm font-semibold text-foreground-dark\">🎉 Przedsprzedaż - ograniczona liczba egzemplarzy</p> aka getByText('🎉 Przedsprzedaż -')\n    3) <a tabindex=\"0\" href=\"#pakiety\" class=\"bg-foreground-dark hover:bg-foreground text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-all hover:shadow-xl hover:scale-105 border-2 border-honey\">Zamów w przedsprzedaży</a> aka getByRole('link', { name: 'Zamów w przedsprzedaży' })\n    4) <p class=\"text-sm font-semibold text-foreground-dark\">🎯 PRZEDSPRZEDAŻ</p> aka getByText('🎯 PRZEDSPRZEDAŻ', { exact: true })\n    5) <p class=\"text-xl text-foreground mb-4\">Zamów teraz w przedsprzedaży i ciesz się najlepsz…</p> aka getByText('Zamów teraz w przedsprzedaży')\n    6) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=PRZEDSPRZEDAŻ')\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:230:56",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 56,
+                              "line": 230
+                            },
+                            "snippet": "  228 |     test('presale page should focus on presale messaging, not customer feedback', async ({ page }) => {\n  229 |       // Instead of fake reviews, page should emphasize presale\n> 230 |       await expect(page.locator('text=PRZEDSPRZEDAŻ')).toBeVisible();\n      |                                                        ^\n  231 |       await expect(page.locator('text=Przedsprzedaż - ograniczona liczba egzemplarzy')).toBeVisible();\n  232 |\n  233 |       // Should mention delivery date"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 56,
+                                "line": 230
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=PRZEDSPRZEDAŻ')\nExpected: visible\nError: strict mode violation: locator('text=PRZEDSPRZEDAŻ') resolved to 6 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <p class=\"text-sm font-semibold text-foreground-dark\">🎉 Przedsprzedaż - ograniczona liczba egzemplarzy</p> aka getByText('🎉 Przedsprzedaż -')\n    3) <a tabindex=\"0\" href=\"#pakiety\" class=\"bg-foreground-dark hover:bg-foreground text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-all hover:shadow-xl hover:scale-105 border-2 border-honey\">Zamów w przedsprzedaży</a> aka getByRole('link', { name: 'Zamów w przedsprzedaży' })\n    4) <p class=\"text-sm font-semibold text-foreground-dark\">🎯 PRZEDSPRZEDAŻ</p> aka getByText('🎯 PRZEDSPRZEDAŻ', { exact: true })\n    5) <p class=\"text-xl text-foreground mb-4\">Zamów teraz w przedsprzedaży i ciesz się najlepsz…</p> aka getByText('Zamów teraz w przedsprzedaży')\n    6) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=PRZEDSPRZEDAŻ')\u001b[22m\n\n\n  228 |     test('presale page should focus on presale messaging, not customer feedback', async ({ page }) => {\n  229 |       // Instead of fake reviews, page should emphasize presale\n> 230 |       await expect(page.locator('text=PRZEDSPRZEDAŻ')).toBeVisible();\n      |                                                        ^\n  231 |       await expect(page.locator('text=Przedsprzedaż - ograniczona liczba egzemplarzy')).toBeVisible();\n  232 |\n  233 |       // Should mention delivery date\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:230:56"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:31.843Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-7dadc-aging-not-customer-feedback/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 56,
+                            "line": 230
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-b9e53e59b2e45f186d54",
+                  "file": "tests/presale.spec.ts",
+                  "line": 228,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "FAQ Section - Presale Specific Questions",
+              "file": "tests/presale.spec.ts",
+              "line": 239,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display FAQ section with correct heading",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 340,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:32.353Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-d33cc55c2298bde9e354",
+                  "file": "tests/presale.spec.ts",
+                  "line": 240,
+                  "column": 9
+                },
+                {
+                  "title": "should have exactly 5 FAQ items",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5357,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('details')\nExpected: \u001b[32m5\u001b[39m\nReceived: \u001b[31m8\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('details')\u001b[22m\n\u001b[2m    9 × locator resolved to 8 elements\u001b[22m\n\u001b[2m      - unexpected value \"8\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('details')\nExpected: \u001b[32m5\u001b[39m\nReceived: \u001b[31m8\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('details')\u001b[22m\n\u001b[2m    9 × locator resolved to 8 elements\u001b[22m\n\u001b[2m      - unexpected value \"8\"\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:251:30",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 30,
+                              "line": 251
+                            },
+                            "snippet": "  249 |\n  250 |       const faqItems = page.locator('details');\n> 251 |       await expect(faqItems).toHaveCount(5);\n      |                              ^\n  252 |     });\n  253 |\n  254 |     test('FAQ: \"Dla jakiego wieku jest książka?\" - should expand and show answer', async ({ page }) => {"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 30,
+                                "line": 251
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('details')\nExpected: \u001b[32m5\u001b[39m\nReceived: \u001b[31m8\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('details')\u001b[22m\n\u001b[2m    9 × locator resolved to 8 elements\u001b[22m\n\u001b[2m      - unexpected value \"8\"\u001b[22m\n\n\n  249 |\n  250 |       const faqItems = page.locator('details');\n> 251 |       await expect(faqItems).toHaveCount(5);\n      |                              ^\n  252 |     });\n  253 |\n  254 |     test('FAQ: \"Dla jakiego wieku jest książka?\" - should expand and show answer', async ({ page }) => {\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:251:30"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:32.753Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-a7d2c-ld-have-exactly-5-FAQ-items/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 30,
+                            "line": 251
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-aa21dceb9ad96e87f947",
+                  "file": "tests/presale.spec.ts",
+                  "line": 247,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ: \"Dla jakiego wieku jest książka?\" - should expand and show answer",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1284,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:38.355Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-07f5cbe34aacbf14bc88",
+                  "file": "tests/presale.spec.ts",
+                  "line": 254,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ: \"Co jeśli dziecko nie lubi matematyki?\" - should be present",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1253,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:39.698Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-8aa9de7189f1203f11cf",
+                  "file": "tests/presale.spec.ts",
+                  "line": 269,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ: \"Kiedy otrzymam książkę?\" - CRITICAL presale question",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1277,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:40.958Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-d2be1dfc365e02ecce2c",
+                  "file": "tests/presale.spec.ts",
+                  "line": 283,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ: \"Co jeśli mamy mało czasu?\" - should mention 10-15 minutes",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1257,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:42.243Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-c0daa5bd84b54160d629",
+                  "file": "tests/presale.spec.ts",
+                  "line": 299,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ: \"Czy mogę zwrócić książkę?\" - should mention return policy",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1261,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:43.506Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-7f0ac33205c2fe4a52f0",
+                  "file": "tests/presale.spec.ts",
+                  "line": 313,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ items should be interactive (expand/collapse)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 691,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:44.774Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-68b73e4535f325855bae",
+                  "file": "tests/presale.spec.ts",
+                  "line": 328,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Package Display - All 3 Packages",
+              "file": "tests/presale.spec.ts",
+              "line": 349,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display all package prices correctly",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 343,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:45.472Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-846b20eb4f1d30e8eb17",
+                  "file": "tests/presale.spec.ts",
+                  "line": 350,
+                  "column": 9
+                },
+                {
+                  "title": "should display all package value badges",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 340,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:45.821Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-cef554f198cde4205801",
+                  "file": "tests/presale.spec.ts",
+                  "line": 359,
+                  "column": 9
+                },
+                {
+                  "title": "should show \"Najpopularniejszy\" badge only on Package 2",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 333,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:46.165Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-7f6488819cbb42198773",
+                  "file": "tests/presale.spec.ts",
+                  "line": 368,
+                  "column": 9
+                },
+                {
+                  "title": "all packages should mention delivery date \"po 12 listopada\"",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 330,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:46.502Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-778a432521ae1f753deb",
+                  "file": "tests/presale.spec.ts",
+                  "line": 376,
+                  "column": 9
+                },
+                {
+                  "title": "should display footer text with guarantees",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 335,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:46.835Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-12cd64bf66ff44154648",
+                  "file": "tests/presale.spec.ts",
+                  "line": 386,
+                  "column": 9
+                },
+                {
+                  "title": "packages should use responsive grid layout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 331,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:47.174Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-70e9543d0eb9807d4a3e",
+                  "file": "tests/presale.spec.ts",
+                  "line": 395,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Hero Section - Presale Messaging",
+              "file": "tests/presale.spec.ts",
+              "line": 404,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display presale badge in hero",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 251,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:47.509Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-a2bc75f67fe2d3f2e2a2",
+                  "file": "tests/presale.spec.ts",
+                  "line": 405,
+                  "column": 9
+                },
+                {
+                  "title": "should display main heading",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 245,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:47.763Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-bbd72a9f99a260fb9724",
+                  "file": "tests/presale.spec.ts",
+                  "line": 410,
+                  "column": 9
+                },
+                {
+                  "title": "should display book cover image",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 254,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:48.011Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-f728943ae5896150d919",
+                  "file": "tests/presale.spec.ts",
+                  "line": 415,
+                  "column": 9
+                },
+                {
+                  "title": "should have CTA button linking to packages",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 252,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:48.269Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-2956b8b455b982e06a47",
+                  "file": "tests/presale.spec.ts",
+                  "line": 424,
+                  "column": 9
+                },
+                {
+                  "title": "should display key benefits in hero",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 302,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Wysyłka po 12 listopada')\nExpected: visible\nError: strict mode violation: locator('text=Wysyłka po 12 listopada') resolved to 8 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <span class=\"text-foreground-dark font-semibold\">Wysyłka po 12 listopada</span> aka getByText('Wysyłka po 12 listopada', { exact: true })\n    3) <p class=\"text-lg text-warm-gray\">Zamów teraz w najlepszej cenie • Wysyłka po 12 li…</p> aka getByText('Zamów teraz w najlepszej cenie • Wysyłka po 12 listopada', { exact: true })\n    4) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').first()\n    5) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(1)\n    6) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(2)\n    7) <p class=\"text-warm-gray\">✓ Wysyłka po 12 listopada ✓ 14 dni na zwrot ✓ Mat…</p> aka getByText('✓ Wysyłka po 12 listopada ✓')\n    8) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Wysyłka po 12 listopada')\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Wysyłka po 12 listopada')\nExpected: visible\nError: strict mode violation: locator('text=Wysyłka po 12 listopada') resolved to 8 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <span class=\"text-foreground-dark font-semibold\">Wysyłka po 12 listopada</span> aka getByText('Wysyłka po 12 listopada', { exact: true })\n    3) <p class=\"text-lg text-warm-gray\">Zamów teraz w najlepszej cenie • Wysyłka po 12 li…</p> aka getByText('Zamów teraz w najlepszej cenie • Wysyłka po 12 listopada', { exact: true })\n    4) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').first()\n    5) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(1)\n    6) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(2)\n    7) <p class=\"text-warm-gray\">✓ Wysyłka po 12 listopada ✓ 14 dni na zwrot ✓ Mat…</p> aka getByText('✓ Wysyłka po 12 listopada ✓')\n    8) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Wysyłka po 12 listopada')\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:435:66",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 66,
+                              "line": 435
+                            },
+                            "snippet": "  433 |       await expect(page.locator('text=Dla dzieci 6-12 lat')).toBeVisible();\n  434 |       await expect(page.locator('text=150+ zagadek')).toBeVisible();\n> 435 |       await expect(page.locator('text=Wysyłka po 12 listopada')).toBeVisible();\n      |                                                                  ^\n  436 |     });\n  437 |   });\n  438 |"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 66,
+                                "line": 435
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('text=Wysyłka po 12 listopada')\nExpected: visible\nError: strict mode violation: locator('text=Wysyłka po 12 listopada') resolved to 8 elements:\n    1) <div class=\"bg-gradient-to-r from-pink via-honey to-green text-foreground-dark py-3 px-4 text-center font-semibold text-sm md:text-base sticky top-0 z-50 shadow-md\">🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie …</div> aka getByText('🎯 PRZEDSPRZEDAŻ • Zamów')\n    2) <span class=\"text-foreground-dark font-semibold\">Wysyłka po 12 listopada</span> aka getByText('Wysyłka po 12 listopada', { exact: true })\n    3) <p class=\"text-lg text-warm-gray\">Zamów teraz w najlepszej cenie • Wysyłka po 12 li…</p> aka getByText('Zamów teraz w najlepszej cenie • Wysyłka po 12 listopada', { exact: true })\n    4) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').first()\n    5) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(1)\n    6) <span class=\"text-foreground leading-relaxed\">Książka w formie papierowej (wysyłka po 12 listop…</span> aka getByText('Książka w formie papierowej (').nth(2)\n    7) <p class=\"text-warm-gray\">✓ Wysyłka po 12 listopada ✓ 14 dni na zwrot ✓ Mat…</p> aka getByText('✓ Wysyłka po 12 listopada ✓')\n    8) <p class=\"text-base text-foreground mb-8 max-w-2xl mx-auto\">📦 Wysyłka po 12 listopada • 🎁 Najlepsza oferta w …</p> aka getByText('📦 Wysyłka po 12 listopada')\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=Wysyłka po 12 listopada')\u001b[22m\n\n\n  433 |       await expect(page.locator('text=Dla dzieci 6-12 lat')).toBeVisible();\n  434 |       await expect(page.locator('text=150+ zagadek')).toBeVisible();\n> 435 |       await expect(page.locator('text=Wysyłka po 12 listopada')).toBeVisible();\n      |                                                                  ^\n  436 |     });\n  437 |   });\n  438 |\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:435:66"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:48.524Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-d281c-isplay-key-benefits-in-hero/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 66,
+                            "line": 435
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-4050f537d7950f735889",
+                  "file": "tests/presale.spec.ts",
+                  "line": 432,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Presale Messaging Consistency",
+              "file": "tests/presale.spec.ts",
+              "line": 439,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should consistently mention \"12 listopada\" delivery date across page",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 257,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:49.065Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-678710e6c9117099fbcd",
+                  "file": "tests/presale.spec.ts",
+                  "line": 440,
+                  "column": 9
+                },
+                {
+                  "title": "should consistently use \"PRZEDSPRZEDAŻ\" messaging",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 251,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:49.381Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-3f39a68be7e4c1ac088f",
+                  "file": "tests/presale.spec.ts",
+                  "line": 448,
+                  "column": 9
+                },
+                {
+                  "title": "should emphasize digital materials are available immediately",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 5354,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=natychmiast po zakupie')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=natychmiast po zakupie')\u001b[22m\n\u001b[2m    9 × locator resolved to <p class=\"text-foreground leading-relaxed mt-4 pt-4 border-t border-soft-blue/20\">Książka w formie papierowej zostanie wysłana po 1…</p>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=natychmiast po zakupie')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=natychmiast po zakupie')\u001b[22m\n\u001b[2m    9 × locator resolved to <p class=\"text-foreground leading-relaxed mt-4 pt-4 border-t border-soft-blue/20\">Książka w formie papierowej zostanie wysłana po 1…</p>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:460:25",
+                            "location": {
+                              "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                              "column": 25,
+                              "line": 460
+                            },
+                            "snippet": "  458 |\n  459 |       const faq = page.locator('text=natychmiast po zakupie');\n> 460 |       await expect(faq).toBeVisible();\n      |                         ^\n  461 |\n  462 |       const footer = page.locator('text=Materiały cyfrowe od razu');\n  463 |       await expect(footer).toBeVisible();"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                                "column": 25,
+                                "line": 460
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('text=natychmiast po zakupie')\nExpected: visible\nReceived: hidden\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('text=natychmiast po zakupie')\u001b[22m\n\u001b[2m    9 × locator resolved to <p class=\"text-foreground leading-relaxed mt-4 pt-4 border-t border-soft-blue/20\">Książka w formie papierowej zostanie wysłana po 1…</p>\u001b[22m\n\u001b[2m      - unexpected value \"hidden\"\u001b[22m\n\n\n  458 |\n  459 |       const faq = page.locator('text=natychmiast po zakupie');\n> 460 |       await expect(faq).toBeVisible();\n      |                         ^\n  461 |\n  462 |       const footer = page.locator('text=Materiały cyfrowe od razu');\n  463 |       await expect(footer).toBeVisible();\n    at /Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts:460:25"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:49.637Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "/Users/kacperczaczyk/Documents/lamiglowki/test-results/tests-presale-Presale-Page-69c22-s-are-available-immediately/error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kacperczaczyk/Documents/lamiglowki/tests/presale.spec.ts",
+                            "column": 25,
+                            "line": 460
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-8f822e7711a3f2467bb2",
+                  "file": "tests/presale.spec.ts",
+                  "line": 456,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Accessibility and UX",
+              "file": "tests/presale.spec.ts",
+              "line": 467,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should have proper page title",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 268,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:55.236Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-ec59a806be9ff95a5e74",
+                  "file": "tests/presale.spec.ts",
+                  "line": 468,
+                  "column": 9
+                },
+                {
+                  "title": "FAQ items should be keyboard accessible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 664,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:55.565Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-65d1339accba44fb7c6f",
+                  "file": "tests/presale.spec.ts",
+                  "line": 472,
+                  "column": 9
+                },
+                {
+                  "title": "all links should be valid (no broken anchors)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 265,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:56.236Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-94c7e0fddae1715e4d7d",
+                  "file": "tests/presale.spec.ts",
+                  "line": 489,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Responsive Design",
+              "file": "tests/presale.spec.ts",
+              "line": 502,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "should display correctly on mobile (375px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 340,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:56.507Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-b1849bb0e24612904ee5",
+                  "file": "tests/presale.spec.ts",
+                  "line": 503,
+                  "column": 9
+                },
+                {
+                  "title": "should display correctly on tablet (768px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 332,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:56.851Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-043e499fb7a3915f0271",
+                  "file": "tests/presale.spec.ts",
+                  "line": 520,
+                  "column": 9
+                },
+                {
+                  "title": "should display correctly on desktop (1920px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 8,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 337,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-07T23:14:57.186Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0098c27d558eaff6b7f8-9a8c3bc17a8f1668e338",
+                  "file": "tests/presale.spec.ts",
+                  "line": 529,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-07T23:14:11.509Z",
+    "duration": 46035.589,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}
