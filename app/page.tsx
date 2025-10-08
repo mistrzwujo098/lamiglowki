@@ -1047,20 +1047,9 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-br from-cream to-background p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-soft-blue/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed">
-                    Kot i pies ważą razem 24 kg.<br/>
-                    Kot jest 5 razy lżejszy od psa.<br/>
-                    Ile waży pies, a ile kot?
+                    Jaki znak należy wstawić pomiędzy liczby 8 i 9, aby uzyskać liczbę większą od 8, ale mniejszą od 9?
                   </p>
                 </div>
-                <details className="cursor-pointer group">
-                  <summary className="text-sm text-green hover:text-green-alt font-semibold list-none flex items-center gap-2">
-                    <span className="group-open:rotate-90 transition-transform">▶</span>
-                    Zobacz odpowiedź
-                  </summary>
-                  <p className="text-sm text-foreground mt-3 pl-6 italic">
-                    Odpowiedź: Pies waży 20 kg, kot waży 4 kg
-                  </p>
-                </details>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="bg-white p-6 rounded-3xl shadow-2xl border-2 border-pink/60 hover:border-pink transition-all transform hover:scale-105">
@@ -1074,21 +1063,10 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-br from-pink/10 to-beige/30 p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-pink/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed text-sm">
-                    Na polu rosną: marchewki, ziemniaki i buraki.<br/>
-                    Marchewek jest o 30 więcej niż buraków.<br/>
-                    Ziemniaków jest dwa razy więcej niż marchewek.<br/>
-                    Razem rośnie 110 warzyw. Ile jest każdego rodzaju?
+                    Masz do dyspozycji 2 wiadra – jedno o pojemności 3 litry, a drugie o pojemności 5 litrów – oraz kran.
+                    Jak przy najmniejszej liczbie ruchów odmierzyć za pomocą wiader 4 litry wody?
                   </p>
                 </div>
-                <details className="cursor-pointer group">
-                  <summary className="text-sm text-pink hover:text-pink-hover font-semibold list-none flex items-center gap-2">
-                    <span className="group-open:rotate-90 transition-transform">▶</span>
-                    Zobacz odpowiedź
-                  </summary>
-                  <p className="text-sm text-foreground mt-3 pl-6 italic">
-                    Odpowiedź: Buraki - 10, Marchewki - 40, Ziemniaki - 60
-                  </p>
-                </details>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="bg-white p-6 rounded-3xl shadow-xl border-2 border-soft-blue/20 hover:border-honey/60 transition-all">
@@ -1103,20 +1081,11 @@ export default function Home() {
                 </div>
                 <div className="bg-gradient-to-br from-honey/10 to-background p-8 rounded-2xl mb-6 min-h-40 flex items-center justify-center border border-honey/20">
                   <p className="text-center text-foreground-dark font-medium leading-relaxed text-sm">
-                    Wnuczek ma tyle miesięcy co dziadek lat.<br/>
-                    Razem mają 91 lat.<br/>
-                    Ile lat ma dziadek, a ile wnuczek?
+                    W pewnym dużym domu są 2 pomieszczenia połączone długim korytarzem. W pierwszym pomieszczeniu znajdują się 3 włączniki – jeden z nich włącza żarówkę, która jest w drugim pokoju.
+                    Możesz przejść z pierwszego pomieszczenia do drugiego, ale nie możesz już wrócić. W jaki sposób stwierdzić, który z 3 włączników włącza żarówkę,
+                    jeśli z pierwszego pomieszczenia nie widać, czy żarówka świeci się w drugim pokoju?
                   </p>
                 </div>
-                <details className="cursor-pointer group">
-                  <summary className="text-sm text-honey hover:text-foreground-dark font-semibold list-none flex items-center gap-2">
-                    <span className="group-open:rotate-90 transition-transform">▶</span>
-                    Zobacz odpowiedź
-                  </summary>
-                  <p className="text-sm text-foreground mt-3 pl-6 italic">
-                    Odpowiedź: Dziadek ma 84 lata, wnuczek ma 7 lat (84 miesiące)
-                  </p>
-                </details>
               </motion.div>
             </div>
 
