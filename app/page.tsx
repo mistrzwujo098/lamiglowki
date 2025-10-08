@@ -20,7 +20,7 @@ const stagger = {
 export default function Home() {
   const packages = [
     {
-      name: 'Pakiet 1',
+      name: 'Pakiet startowy',
       price: '59 zł',
       popular: false,
       features: [
@@ -289,7 +289,7 @@ export default function Home() {
                 </p>
                 <p className="text-foreground leading-relaxed">
                   Wiesz, że pierwsze lata to <span className="font-semibold text-foreground-dark">złoty czas dla rozwoju mózgu</span>.
-                  A on przesuwają palcem po TikToku zamiast trenować logiczne myślenie.
+                  A one przesuwają palcem po TikToku zamiast trenować logiczne myślenie.
                 </p>
               </motion.div>
 
@@ -558,7 +558,7 @@ export default function Home() {
                   <li className="flex items-start gap-3">
                     <span className="text-green text-xl">✓</span>
                     <div>
-                      <strong className="text-foreground-dark">Dzieci 5-12 lat</strong>
+                      <strong className="text-foreground-dark">Dzieci 6-12 lat</strong>
                       <p className="text-foreground text-sm">Trzy poziomy trudności dostosowane do wieku</p>
                     </div>
                   </li>
@@ -614,7 +614,7 @@ export default function Home() {
                   <li className="flex items-start gap-3">
                     <span className="text-warm-gray text-xl">×</span>
                     <div>
-                      <p className="text-warm-gray">Wolisz aplikacje z mikrotransa kcjami i notyfikacjami</p>
+                      <p className="text-warm-gray">Wolisz aplikacje z mikrotransakcjami i notyfikacjami</p>
                     </div>
                   </li>
                 </ul>
@@ -682,7 +682,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey" />
                     Część 1: Rozgrzewka (★)
                   </h4>
-                  <p className="text-warm-gray text-sm mb-4">50 zagadek na start - budowanie pewności siebie i zaufania do własnych umiejętności</p>
+                  <p className="text-warm-gray text-sm mb-4">40 zagadek na start - budowanie pewności siebie i zaufania do własnych umiejętności</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
@@ -690,7 +690,7 @@ export default function Home() {
                     <Star className="w-5 h-5 text-honey" />
                     Część 2: Wyzwanie (★★)
                   </h4>
-                  <p className="text-warm-gray text-sm mb-4">60 zagadek średniej trudności - rozwijanie strategii i nieszablonowego myślenia</p>
+                  <p className="text-warm-gray text-sm mb-4">40 zagadek średniej trudności - rozwijanie strategii i nieszablonowego myślenia</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
@@ -1444,7 +1444,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Kontakt</h4>
-              <p className="text-sm opacity-80">paulina@matematyki.pl</p>
+              <p className="text-sm opacity-80">paulina@paulinaodmatematyki.com</p>
               <p className="text-sm opacity-80 mt-2">Odpowiadamy w 24h</p>
             </div>
           </div>
