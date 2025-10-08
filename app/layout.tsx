@@ -113,7 +113,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <ScrollProgress />
-        <TableOfContents />
+        {/* <TableOfContents /> */}
         <FloatingCTA />
         {children}
       </body>
