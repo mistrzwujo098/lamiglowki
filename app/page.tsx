@@ -1220,9 +1220,9 @@ export default function Home() {
 
                 <div className="mb-6">
                   <div className="flex flex-col gap-3">
-                    <span className="text-4xl sm:text-5xl font-bold text-foreground-dark">{pkg.price || `Zniżka ${pkg.discount}`}</span>
+                    <span className="text-4xl sm:text-5xl font-bold text-foreground-dark">{pkg.price}</span>
                     <span className="text-base text-green font-semibold">
-                      {pkg.price ? '💳 Kup teraz' : '🎁 Dla zapisanych na listę'}
+                      💳 Kup teraz
                     </span>
                   </div>
                 </div>
