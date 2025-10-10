@@ -36,7 +36,7 @@ export default function LeadMagnet() {
 
       if (result.success) {
         // Redirect na thank you page
-        window.location.href = '/dziekujemy';
+        window.location.href = '/lamiglowki/dziekujemy';
       } else {
         // Pokaż konkretny błąd użytkownikowi
         if (result.code === 'ALREADY_SUBSCRIBED') {

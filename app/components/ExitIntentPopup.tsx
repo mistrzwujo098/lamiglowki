@@ -68,7 +68,7 @@ export default function ExitIntentPopup() {
       });
 
       if (result.success) {
-        window.location.href = '/dziekujemy';
+        window.location.href = '/lamiglowki/dziekujemy';
       } else {
         // Pokaż konkretny błąd użytkownikowi
         if (result.code === 'ALREADY_SUBSCRIBED') {
