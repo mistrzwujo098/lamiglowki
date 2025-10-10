@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, Lock } from 'lucide-react';
 import Image from 'next/image';
 import { assetPath } from '@/lib/asset-path';
+import { subscribeToNewsletter, MAILERLITE_GROUPS } from '@/lib/mailerlite';
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,19 +61,25 @@ export default function ExitIntentPopup() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+      // Dodaj do grupy Exit Intent / Fragment (167646643611502076)
+      const result = await subscribeToNewsletter({
+        email,
+        groupId: MAILERLITE_GROUPS.EXIT_INTENT,
       });
 
-      if (response.ok) {
+      if (result.success) {
         window.location.href = '/dziekujemy';
       } else {
-        alert('Wystąpił błąd. Spróbuj ponownie.');
+        // Pokaż konkretny błąd użytkownikowi
+        if (result.code === 'ALREADY_SUBSCRIBED') {
+          alert('Ten adres email jest już zapisany. Sprawdź swoją skrzynkę!');
+        } else {
+          alert(result.error || 'Wystąpił błąd. Spróbuj ponownie.');
+        }
         setIsSubmitting(false);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       alert('Wystąpił błąd. Spróbuj ponownie.');
       setIsSubmitting(false);
     }

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { CheckCircle, Download, Lock, Star } from 'lucide-react';
 import { useState } from 'react';
 import { assetPath } from '@/lib/asset-path';
+import { subscribeToNewsletter, MAILERLITE_GROUPS } from '@/lib/mailerlite';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -25,22 +26,28 @@ export default function LeadMagnet() {
 
     setIsSubmitting(true);
 
-    // Integracja z MailerLite
     try {
-      const response = await fetch('/api/newsletter', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+      // Dodaj do grupy Lead Magnet (167646651634157384)
+      const result = await subscribeToNewsletter({
+        email,
+        groupId: MAILERLITE_GROUPS.LEAD_MAGNET,
+        fields: wantsSMS && phone ? { phone } : {},
       });
 
-      if (response.ok) {
+      if (result.success) {
         // Redirect na thank you page
         window.location.href = '/dziekujemy';
       } else {
-        alert('Wystąpił błąd. Spróbuj ponownie.');
+        // Pokaż konkretny błąd użytkownikowi
+        if (result.code === 'ALREADY_SUBSCRIBED') {
+          alert('Ten adres email jest już zapisany. Sprawdź swoją skrzynkę!');
+        } else {
+          alert(result.error || 'Wystąpił błąd. Spróbuj ponownie.');
+        }
         setIsSubmitting(false);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       alert('Wystąpił błąd. Spróbuj ponownie.');
       setIsSubmitting(false);
     }
