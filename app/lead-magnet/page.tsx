@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { CheckCircle, Download, Lock, Star } from 'lucide-react';
 import { useState } from 'react';
+import { assetPath } from '@/lib/asset-path';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -77,7 +78,7 @@ export default function LeadMagnet() {
             >
               <div className="relative w-full aspect-[3/4] max-w-md mx-auto">
                 <Image
-                  src="/images/fragment1.webp"
+                  src={assetPath("/images/fragment1.webp")}
                   alt="Darmowy lead magnet - 5 łamigłówek"
                   fill
                   className="object-contain drop-shadow-2xl rounded-lg"

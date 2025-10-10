@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, Lock } from 'lucide-react';
 import Image from 'next/image';
+import { assetPath } from '@/lib/asset-path';
 
 export default function ExitIntentPopup() {
   const [isVisible, setIsVisible] = useState(false);
@@ -112,7 +113,7 @@ export default function ExitIntentPopup() {
                 <div className="flex items-center justify-center">
                   <div className="relative w-full aspect-[3/4] max-w-[200px]">
                     <Image
-                      src="/images/fragment1.webp"
+                      src={assetPath("/images/fragment1.webp")}
                       alt="Darmowe łamigłówki"
                       fill
                       className="object-contain drop-shadow-xl"

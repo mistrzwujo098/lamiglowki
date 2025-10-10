@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { CheckCircle, Download, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
+import { assetPath } from '@/lib/asset-path';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -140,7 +141,7 @@ export default function ThankYou() {
                     <div className="flex gap-4">
                       <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                         <Image
-                          src="/images/okladka-przodem.webp"
+                          src={assetPath("/images/okladka-przodem.webp")}
                           alt="Książka Łamigłówki"
                           fill
                           className="object-cover group-hover:scale-110 transition-transform"
@@ -159,7 +160,7 @@ export default function ThankYou() {
                     <div className="flex gap-4">
                       <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                         <Image
-                          src="/images/fragment2.webp"
+                          src={assetPath("/images/fragment2.webp")}
                           alt="Przykłady"
                           fill
                           className="object-cover group-hover:scale-110 transition-transform"
@@ -239,7 +240,7 @@ export default function ThankYou() {
               <div className="flex justify-center items-center">
                 <div className="relative w-full max-w-sm">
                   <Image
-                    src="/images/okladka-przodem.webp"
+                    src={assetPath("/images/okladka-przodem.webp")}
                     alt="Książka Łamigłówki"
                     width={400}
                     height={550}

@@ -2,12 +2,22 @@
  * Helper function to prepend basePath to asset URLs
  * This ensures images and other static assets work correctly with Cloudflare Worker routing
  *
- * Note: Since Next.js doesn't automatically add basePath to public assets in Image component,
- * we use assetPrefix in next.config.ts which handles this globally.
- * This function is kept for backward compatibility and future use.
+ * IMPORTANT: assetPrefix in next.config.ts does NOT work for <Image> src paths from public/
+ * We must manually add basePath to all image paths.
  */
 export function assetPath(path: string): string {
-  // assetPrefix in next.config.ts handles this automatically now
-  // Just return the path as-is
-  return path;
+  const basePath = '/lamiglowki';
+
+  // If path already starts with basePath, return as is
+  if (path.startsWith(basePath)) {
+    return path;
+  }
+
+  // If path starts with /, prepend basePath
+  if (path.startsWith('/')) {
+    return `${basePath}${path}`;
+  }
+
+  // Otherwise return with basePath and leading /
+  return `${basePath}/${path}`;
 }

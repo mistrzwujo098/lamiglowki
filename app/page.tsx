@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Star, BookOpen, Users, Award, Clock, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { assetPath } from '@/lib/asset-path';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -255,7 +256,7 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <Image
-                    src="/images/okladka-przodem.webp"
+                    src={assetPath("/images/okladka-przodem.webp")}
                     alt="Łamigłówki dla bystrej główki - okładka książki"
                     width={500}
                     height={700}
@@ -283,7 +284,7 @@ export default function Home() {
                   animate={{ y: [0, -10, 0], rotate: [0, 5, 0] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <Image src="/images/1.webp" alt="" width={64} height={64} className="rounded-full" />
+                  <Image src={assetPath("/images/1.webp")} alt="" width={64} height={64} className="rounded-full" />
                 </motion.div>
 
                 <motion.div
@@ -291,7 +292,7 @@ export default function Home() {
                   animate={{ y: [0, 10, 0], rotate: [0, -5, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 >
-                  <Image src="/images/1.webp" alt="" width={80} height={80} className="rounded-full" />
+                  <Image src={assetPath("/images/1.webp")} alt="" width={80} height={80} className="rounded-full" />
                 </motion.div>
               </div>
             </motion.div>
@@ -307,14 +308,14 @@ export default function Home() {
           animate={{ y: [0, -20, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Image src="/images/4.webp" alt="" width={128} height={128} className="rounded-full" />
+          <Image src={assetPath("/images/4.webp")} alt="" width={128} height={128} className="rounded-full" />
         </motion.div>
         <motion.div
           className="absolute bottom-20 left-5 w-24 h-24 opacity-10"
           animate={{ y: [0, 20, 0], rotate: [0, 10, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Image src="/images/5.webp" alt="" width={96} height={96} className="rounded-full" />
+          <Image src={assetPath("/images/5.webp")} alt="" width={96} height={96} className="rounded-full" />
         </motion.div>
         <div className="container mx-auto px-4">
           <motion.div
@@ -553,10 +554,10 @@ export default function Home() {
       <section id="benefits" className="py-20 md:py-32 bg-white relative overflow-hidden">
         {/* Dekoracyjne owce w tle */}
         <div className="absolute top-10 left-10 w-24 h-24 opacity-10">
-          <Image src="/images/1.webp" alt="" width={96} height={96} className="rounded-full" />
+          <Image src={assetPath("/images/1.webp")} alt="" width={96} height={96} className="rounded-full" />
         </div>
         <div className="absolute bottom-20 right-20 w-32 h-32 opacity-10">
-          <Image src="/images/1.webp" alt="" width={128} height={128} className="rounded-full" />
+          <Image src={assetPath("/images/1.webp")} alt="" width={128} height={128} className="rounded-full" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -713,7 +714,7 @@ export default function Home() {
           animate={{ y: [0, -15, 0], x: [0, 5, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Image src="/images/9.webp" alt="" width={80} height={80} />
+          <Image src={assetPath("/images/9.webp")} alt="" width={80} height={80} />
         </motion.div>
         <div className="container mx-auto px-4">
           <motion.div
@@ -967,14 +968,14 @@ export default function Home() {
           animate={{ rotate: [0, 360] }}
           transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         >
-          <Image src="/images/2.webp" alt="" width={96} height={96} className="rounded-full" />
+          <Image src={assetPath("/images/2.webp")} alt="" width={96} height={96} className="rounded-full" />
         </motion.div>
         <motion.div
           className="absolute bottom-20 right-10 w-32 h-32 opacity-10"
           animate={{ rotate: [360, 0] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         >
-          <Image src="/images/3.webp" alt="" width={128} height={128} className="rounded-full" />
+          <Image src={assetPath("/images/3.webp")} alt="" width={128} height={128} className="rounded-full" />
         </motion.div>
 
         <div className="container mx-auto px-4">
@@ -1214,7 +1215,7 @@ export default function Home() {
           animate={{ rotate: [0, 10, 0] }}
           transition={{ duration: 6, repeat: Infinity }}
         >
-          <Image src="/images/1.webp" alt="" width={96} height={96} className="rounded-full" />
+          <Image src={assetPath("/images/1.webp")} alt="" width={96} height={96} className="rounded-full" />
         </motion.div>
         <div className="container mx-auto px-4">
           <motion.div
@@ -1348,7 +1349,7 @@ export default function Home() {
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 6, repeat: Infinity }}
         >
-          <Image src="/images/5.webp" alt="" width={128} height={128} />
+          <Image src={assetPath("/images/5.webp")} alt="" width={128} height={128} />
         </motion.div>
 
         <div className="container mx-auto px-4">
@@ -1371,7 +1372,7 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <Image
-                    src="/images/paulina-ksiazka.webp"
+                    src={assetPath("/images/paulina-ksiazka.webp")}
                     alt="Paulina - autorka książki Łamigłówki dla bystrej główki"
                     width={500}
                     height={750}
@@ -1383,7 +1384,7 @@ export default function Home() {
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   >
-                    <Image src="/images/6.webp" alt="" width={48} height={48} />
+                    <Image src={assetPath("/images/6.webp")} alt="" width={48} height={48} />
                   </motion.div>
                 </motion.div>
               </motion.div>
@@ -1427,14 +1428,14 @@ export default function Home() {
           animate={{ rotate: [0, 5, -5, 0] }}
           transition={{ duration: 10, repeat: Infinity }}
         >
-          <Image src="/images/1.webp" alt="" width={192} height={192} className="rounded-2xl" />
+          <Image src={assetPath("/images/1.webp")} alt="" width={192} height={192} className="rounded-2xl" />
         </motion.div>
         <motion.div
           className="absolute bottom-10 right-10 w-48 h-48 opacity-5 hidden lg:block"
           animate={{ rotate: [0, -5, 5, 0] }}
           transition={{ duration: 12, repeat: Infinity }}
         >
-          <Image src="/images/2.webp" alt="" width={192} height={192} className="rounded-2xl" />
+          <Image src={assetPath("/images/2.webp")} alt="" width={192} height={192} className="rounded-2xl" />
         </motion.div>
 
         <div className="container mx-auto px-4">
