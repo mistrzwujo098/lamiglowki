@@ -995,10 +995,10 @@ export default function Home() {
             {/* Real examples from the book */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-16">
               {[
-                { src: '/images/fragment1.webp', title: 'Fragment 1' },
-                { src: '/images/fragment2.webp', title: 'Fragment 2' },
-                { src: '/images/fragment3.webp', title: 'Fragment 3' },
-                { src: '/images/fragment4.webp', title: 'Fragment 4' },
+                { src: assetPath('/images/fragment1.webp'), title: 'Fragment 1' },
+                { src: assetPath('/images/fragment2.webp'), title: 'Fragment 2' },
+                { src: assetPath('/images/fragment3.webp'), title: 'Fragment 3' },
+                { src: assetPath('/images/fragment4.webp'), title: 'Fragment 4' },
               ].map((example, index) => (
                 <motion.div
                   key={index}
