@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Łamigłówki dla bystrej główki",
     description: "15 minut dziennie = lepsza logika, koncentracja i wspólny czas bez ekranu",
-    images: ["/images/okladka przodem.webp"],
+    images: ["/images/okladka-przodem.webp"],
   }
 };
 
@@ -48,7 +48,7 @@ export default function RootLayout({
       {
         "@type": "Product",
         "name": "Łamigłówki dla bystrej główki",
-        "image": "/images/okladka przodem.webp",
+        "image": "/images/okladka-przodem.webp",
         "description": "Książka z zagadkami logicznymi dla dzieci",
         "brand": {
           "@type": "Brand",
@@ -93,7 +93,7 @@ export default function RootLayout({
         "@type": "Organization",
         "name": "Paulina od Matematyki",
         "url": "https://paulinaodmatematyki.com",
-        "logo": "/images/okladka przodem.webp",
+        "logo": "/images/okladka-przodem.webp",
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "paulina@matematyki.pl",

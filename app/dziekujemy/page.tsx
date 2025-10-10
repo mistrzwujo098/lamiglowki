@@ -140,7 +140,7 @@ export default function ThankYou() {
                     <div className="flex gap-4">
                       <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                         <Image
-                          src="/images/okladka przodem.webp"
+                          src="/images/okladka-przodem.webp"
                           alt="Książka Łamigłówki"
                           fill
                           className="object-cover group-hover:scale-110 transition-transform"
@@ -236,13 +236,16 @@ export default function ThankYou() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-              <div className="relative aspect-[3/4] max-w-xs mx-auto">
-                <Image
-                  src="/images/okladka przodem.webp"
-                  alt="Książka Łamigłówki"
-                  fill
-                  className="object-contain drop-shadow-2xl"
-                />
+              <div className="flex justify-center items-center">
+                <div className="relative w-full max-w-sm">
+                  <Image
+                    src="/images/okladka-przodem.webp"
+                    alt="Książka Łamigłówki"
+                    width={400}
+                    height={550}
+                    className="drop-shadow-2xl rounded-lg w-full h-auto"
+                  />
+                </div>
               </div>
 
               <div>
