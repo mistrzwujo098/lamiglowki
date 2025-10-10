@@ -46,43 +46,48 @@ export default function Home() {
   const packages = [
     {
       name: 'Pakiet startowy',
-      price: '59 zł',
+      price: '59 zł + 9 zł dostawa',
       popular: false,
       features: [
         'Książka w formie papierowej (wysyłka po 12 listopada)',
         'Certyfikat imienny dla dziecka',
         'Kilka rozwiązań video'
       ],
-      value: 'Podstawowy'
+      value: 'Podstawowy',
+      link: 'https://skutecznekorepetycje.salescrm.pl/cart/add_product/18215'
     },
     {
       name: 'Pakiet korzystny',
       price: '119 zł',
       popular: true,
       features: [
-        '2× książka drukowana (dziecko + prezent/rodzeństwo)',
+        '2× książka drukowana (dziecko + prezent/rodzeństwo) - wysyłka po 12 listopada',
         'Certyfikat imienny dla dziecka',
         'Kilka rozwiązań video',
         'eBook do wydrukowania',
         'Darmowa dostawa'
       ],
-      value: 'Najpopularniejszy'
+      value: 'Najpopularniejszy',
+      link: 'https://skutecznekorepetycje.salescrm.pl/cart/add_product_set/3723'
     },
     {
       name: 'Pakiet najlepszy',
       price: '159 zł',
       popular: false,
       features: [
-        '2× książka drukowana (dziecko + prezent/rodzeństwo)',
+        '📚 3 KSIĄŻKI DRUKOWANE:',
+        '  • 2× Łamigłówki dla bystrej główki (dziecko + prezent/rodzeństwo)',
+        '  • "Wierszyki z Matematyki - Ucz się matematyki przez zabawę"',
+        '(wysyłka po 12 listopada)',
         'Certyfikat imienny dla dziecka',
         'Kilka rozwiązań video',
         'eBook do wydrukowania',
         'Rozwiązania video wszystkich zagadek',
         'eBook z dodatkowymi zagadkami dla utrwalenia',
-        'BONUS: Książka "Wierszyki z Matematyki - Ucz się matematyki przez zabawę"',
         'Darmowa dostawa'
       ],
-      value: 'Kompletny'
+      value: 'Kompletny',
+      link: 'https://skutecznekorepetycje.salescrm.pl/cart/add_product_set/3724'
     }
   ];
 
@@ -112,15 +117,15 @@ export default function Home() {
   const faqItems = [
     {
       q: 'Dla jakiego wieku jest książka?',
-      a: 'Większość zagadek może rozwiązać zarówno kilkuletnie dziecko, jak i osoba dorosła. Książka jest podzielona na trzy poziomy trudności (★, ★★, ★★★).'
+      a: 'Większość zagadek może rozwiązać zarówno kilkuletnie dziecko, jak i osoba dorosła. Książka jest podzielona na trzy poziomy trudności (★, ★★, ★★★). Niektóre zagadki dziecko rozwiąże szybciej niż dorosły, więc wiek nie do końca ma znaczenie.'
     },
     {
       q: 'Co jeśli dziecko nie lubi matematyki?',
       a: 'Ta książka to nie tradycyjna matematyka! To zagadki pełne magii, humoru, smoków i ciasteczek - dzieci uwielbiają takie wyzwania.'
     },
     {
-      q: 'Kiedy otrzymam książkę?',
-      a: 'Książka w formie papierowej zostanie wysłana po 12 listopada. Materiały cyfrowe (certyfikat, video, ebooki) otrzymasz natychmiast po zakupie.'
+      q: 'Kiedy otrzymam książkę/zamówienie?',
+      a: 'Książka w formie papierowej zostanie wysłana po 12 listopada. Materiały cyfrowe (video, ebooki) otrzymasz przed wysyłką fizyczną.'
     },
     {
       q: 'Co jeśli mamy mało czasu?',
@@ -250,7 +255,7 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                 >
                   <Image
-                    src="/images/okladka przodem.webp"
+                    src="/images/okladka-przodem.webp"
                     alt="Łamigłówki dla bystrej główki - okładka książki"
                     width={500}
                     height={700}
@@ -1277,7 +1282,7 @@ export default function Home() {
                   ))}
                 </ul>
 
-                <a href="https://skutecznekorepetycje.salescrm.pl/cart/add_product/9642" className={`block w-full py-4 rounded-full font-semibold transition-all text-center ${
+                <a href={pkg.link} className={`block w-full py-4 rounded-full font-semibold transition-all text-center ${
                   pkg.popular
                     ? 'bg-foreground-dark hover:bg-foreground text-white shadow-lg hover:shadow-xl border-2 border-honey'
                     : 'bg-pink hover:bg-pink-hover text-foreground-dark border-2 border-pink hover:border-pink-hover'
@@ -1295,7 +1300,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-center mt-12 space-y-4"
           >
-            <p className="text-warm-gray">✓ Wysyłka po 12 listopada ✓ 14 dni na zwrot ✓ Materiały cyfrowe od razu</p>
+            <p className="text-warm-gray">✓ Wysyłka po 12 listopada ✓ 14 dni na zwrot ✓ Materiały cyfrowe otrzymasz przed wysyłką fizyczną</p>
           </motion.div>
         </div>
       </section>
@@ -1355,22 +1360,22 @@ export default function Home() {
             className="max-w-6xl mx-auto"
           >
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              {/* Left: Book mockup */}
+              {/* Left: Author photo */}
               <motion.div
                 variants={fadeInUp}
                 className="flex justify-center"
               >
                 <motion.div
                   className="relative"
-                  whileHover={{ scale: 1.05, rotateY: 5 }}
+                  whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <Image
-                    src="/images/okładka książki 3d.webp"
-                    alt="Książka Łamigłówki dla bystrej główki 3D"
-                    width={400}
-                    height={500}
-                    className="drop-shadow-2xl"
+                    src="/images/paulina-ksiazka.webp"
+                    alt="Paulina - autorka książki Łamigłówki dla bystrej główki"
+                    width={500}
+                    height={750}
+                    className="rounded-3xl shadow-2xl"
                   />
                   {/* Dekoracyjne gwiazdki */}
                   <motion.div
@@ -1386,24 +1391,25 @@ export default function Home() {
               {/* Right: Author info */}
               <motion.div
                 variants={fadeInUp}
-                className="bg-white p-8 md:p-12 rounded-2xl shadow-xl"
               >
-                <h2 className="text-3xl font-bold mb-6 text-foreground-dark">O autorce</h2>
-                <div className="space-y-4 text-foreground">
-                  <p>
-                    Nazywam się <strong className="text-foreground-dark">Paulina</strong> i jestem pasjonatką matematyki i logicznego myślenia.
-                    Jako dziecko uwielbiałam zagadki i teraz chcę tę pasję przekazać dalej.
-                  </p>
-                  <p>
-                    Wierzę, że odwaga myślenia inaczej to jedna z najpiękniejszych cech człowieka.
-                    W erze sztucznej inteligencji to właśnie kreatywność i nieszablonowe myślenie
-                    będą najcenniejsze.
-                  </p>
-                  <p className="italic">
-                    &ldquo;Ta książka to nie tylko zbiór zagadek. To wyprawa do świata, w którym matematyka
-                    spotyka ciekawość i przygodę.&rdquo;
-                  </p>
-                  <p className="text-right font-semibold text-foreground-dark">— Paulina od Matematyki</p>
+                <div className="bg-white p-8 md:p-10 rounded-2xl shadow-xl">
+                  <h2 className="text-3xl font-bold mb-6 text-foreground-dark">O autorce</h2>
+                  <div className="space-y-4 text-foreground">
+                    <p>
+                      Nazywam się <strong className="text-foreground-dark">Paulina</strong> i jestem pasjonatką matematyki i logicznego myślenia.
+                      Jako dziecko uwielbiałam zagadki i teraz chcę tę pasję przekazać dalej.
+                    </p>
+                    <p>
+                      Wierzę, że odwaga myślenia inaczej to jedna z najpiękniejszych cech człowieka.
+                      W erze sztucznej inteligencji to właśnie kreatywność i nieszablonowe myślenie
+                      będą najcenniejsze.
+                    </p>
+                    <p className="italic">
+                      &ldquo;Ta książka to nie tylko zbiór zagadek. To wyprawa do świata, w którym matematyka
+                      spotyka ciekawość i przygodę.&rdquo;
+                    </p>
+                    <p className="text-right font-semibold text-foreground-dark">— Paulina od Matematyki</p>
+                  </div>
                 </div>
               </motion.div>
             </div>
@@ -1458,10 +1464,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-honey/20 to-green/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </motion.a>
             <p className="text-sm text-foreground-dark mt-6 font-medium">
-              ✓ 30 dni zwrotu bez pytań • ✓ Bezpieczna płatność • ✓ Darmowa dostawa
-            </p>
-            <p className="text-xs text-warm-gray mt-2 italic">
-              * Tylko dziś: Pakiet Aktywny w promocyjnej cenie
+              ✓ 14 dni na zwrot • ✓ Bezpieczna płatność
             </p>
           </motion.div>
         </div>
