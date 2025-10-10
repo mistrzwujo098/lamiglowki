@@ -1,0 +1,39 @@
+# Cloudflare Pages ignore file
+# Exclude files that shouldn't be deployed
+
+# Next.js cache and build artifacts
+.next/cache
+.next/cache/**
+cache
+cache/**
+*.cache
+
+# Node modules
+node_modules
+node_modules/**
+
+# Build cache
+.next/server/vendor-chunks
+.vercel
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment files
+.env*.local
+.env
+
+# IDE
+.vscode
+.idea
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
