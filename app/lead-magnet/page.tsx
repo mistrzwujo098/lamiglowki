@@ -14,7 +14,6 @@ const fadeInUp = {
 
 export default function LeadMagnet() {
   const [email, setEmail] = useState('');
-  const [agreed, setAgreed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [wantsSMS, setWantsSMS] = useState(false);
   const [phone, setPhone] = useState('');
@@ -22,7 +21,7 @@ export default function LeadMagnet() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!email || !agreed) return;
+    if (!email) return;
 
     setIsSubmitting(true);
 
@@ -170,23 +169,6 @@ export default function LeadMagnet() {
                     </div>
                   )}
 
-                  <div className="flex items-start gap-2">
-                    <input
-                      type="checkbox"
-                      id="rodo"
-                      checked={agreed}
-                      onChange={(e) => setAgreed(e.target.checked)}
-                      required
-                      className="mt-1 w-4 h-4"
-                    />
-                    <label htmlFor="rodo" className="text-sm text-foreground">
-                      Zgadzam się na przetwarzanie danych osobowych.{' '}
-                      <a href="/polityka-prywatnosci" target="_blank" className="text-green underline">
-                        Polityka prywatności
-                      </a>
-                    </label>
-                  </div>
-
                   <button
                     type="submit"
                     disabled={isSubmitting}
@@ -197,7 +179,11 @@ export default function LeadMagnet() {
                   </button>
                 </form>
 
-                <p className="text-sm text-center text-warm-gray mt-4 flex items-center justify-center gap-2">
+                <p className="text-xs text-center text-warm-gray mt-3">
+                  Zapisując się wyrażasz zgodę na wysyłanie ofert promocyjnych.
+                </p>
+
+                <p className="text-sm text-center text-warm-gray mt-2 flex items-center justify-center gap-2">
                   <Lock className="w-4 h-4" />
                   Szanujemy Twoją prywatność. Bez spamu, gwarantujemy.
                 </p>

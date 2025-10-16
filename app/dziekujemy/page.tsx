@@ -59,6 +59,17 @@ export default function ThankYou() {
             <p className="text-sm text-warm-gray mt-4">
               Plik zostanie pobrany na Twoje urządzenie
             </p>
+
+            <div className="mt-6">
+              <a
+                href="https://paulinaodmatematyki.com/wp-content/uploads/2025/10/Bezplatny-fragment-Lamiglowki-dla-bystrej-glowki.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green hover:text-green-alt font-semibold underline"
+              >
+                Pobierz darmowy fragment książki
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -115,7 +126,7 @@ export default function ThankYou() {
                     Instagram
                   </a>
                   <a
-                    href="https://youtube.com/@paulinaodmatematyki"
+                    href="https://www.youtube.com/@Paulina_od_Matematyki"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full px-4 py-3 bg-[#FF0000] hover:bg-[#cc0000] text-white rounded-full transition-colors"
@@ -272,7 +283,7 @@ export default function ThankYou() {
                 </div>
 
                 <a
-                  href="/#pakiety"
+                  href="https://paulinaodmatematyki.com/lamiglowki"
                   className="block w-full bg-foreground-dark hover:bg-foreground text-white font-bold text-lg py-5 rounded-full text-center transition-all shadow-lg hover:shadow-xl"
                 >
                   Chcę skorzystać z oferty
