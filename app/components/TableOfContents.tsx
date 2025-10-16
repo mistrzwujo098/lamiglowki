@@ -12,6 +12,7 @@ const sections = [
   { id: 'for-who', label: 'Dla kogo?' },
   { id: 'inside', label: 'Co w środku?' },
   { id: 'examples', label: 'Przykłady' },
+  { id: 'fragment', label: 'Darmowy fragment' },
   { id: 'stories', label: 'Historie' },
   { id: 'pakiety', label: 'Cennik' },
   { id: 'faq', label: 'FAQ' },

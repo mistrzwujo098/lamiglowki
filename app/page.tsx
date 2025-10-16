@@ -26,7 +26,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'problem', 'solution', 'benefits', 'for-who', 'inside', 'examples', 'pakiety', 'faq', 'author'];
+      const sections = ['hero', 'problem', 'solution', 'benefits', 'for-who', 'inside', 'examples', 'fragment', 'pakiety', 'faq', 'author'];
       const scrollPosition = window.scrollY + 100;
 
       for (const sectionId of sections) {

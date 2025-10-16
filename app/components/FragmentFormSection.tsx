@@ -51,7 +51,7 @@ export default function FragmentFormSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-ivory via-cream to-beige">
+    <section id="fragment" className="py-16 md:py-24 bg-gradient-to-br from-ivory via-cream to-beige">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
           initial="hidden"
