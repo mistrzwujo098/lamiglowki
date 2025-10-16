@@ -146,50 +146,6 @@ export default function Home() {
         🎯 PRZEDSPRZEDAŻ • Zamów teraz w najlepszej cenie • Wysyłka po 12 listopada 📦
       </div>
 
-      {/* Side Navigation */}
-      <nav className="hidden xl:block fixed right-8 top-1/2 -translate-y-1/2 z-40">
-        <ul className="space-y-4">
-          {[
-            { id: 'hero', label: 'Start' },
-            { id: 'problem', label: 'Problem' },
-            { id: 'solution', label: 'Rozwiązanie' },
-            { id: 'benefits', label: 'Korzyści' },
-            { id: 'for-who', label: 'Dla kogo' },
-            { id: 'inside', label: 'Zawartość' },
-            { id: 'examples', label: 'Przykłady' },
-            { id: 'pakiety', label: 'Pakiety' },
-            { id: 'faq', label: 'FAQ' },
-            { id: 'author', label: 'Autor' },
-          ].map((section) => (
-            <li key={section.id}>
-              <a
-                href={`#${section.id}`}
-                className={`block group relative transition-all duration-300 ${
-                  activeSection === section.id ? 'scale-110' : ''
-                }`}
-              >
-                <span
-                  className={`absolute right-full mr-3 px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
-                    activeSection === section.id
-                      ? 'opacity-100 translate-x-0 bg-green text-white'
-                      : 'opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 bg-foreground-dark text-white'
-                  }`}
-                >
-                  {section.label}
-                </span>
-                <div
-                  className={`w-3 h-3 rounded-full border-2 transition-all duration-300 ${
-                    activeSection === section.id
-                      ? 'bg-green border-green scale-125'
-                      : 'bg-white border-foreground-dark/30 group-hover:border-green group-hover:scale-110'
-                  }`}
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
       {/* Hero Section */}
       <section id="hero" className="relative overflow-hidden bg-gradient-to-br from-background via-ivory to-cream">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMDAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDMiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-60"></div>
