@@ -139,7 +139,7 @@ export default function ThankYou() {
                   Polecamy również:
                 </h3>
                 <div className="space-y-4">
-                  <a href="/" className="block group">
+                  <a href="https://paulinaodmatematyki.com/lamiglowki/#pakiety" className="block group">
                     <div className="flex gap-4">
                       <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                         <Image
@@ -158,7 +158,7 @@ export default function ThankYou() {
                     </div>
                   </a>
 
-                  <a href="/#examples" className="block group">
+                  <a href="https://paulinaodmatematyki.com/lamiglowki/#examples" className="block group">
                     <div className="flex gap-4">
                       <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden">
                         <Image
