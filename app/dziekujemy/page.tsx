@@ -46,8 +46,9 @@ export default function ThankYou() {
 
             {/* Direct download button */}
             <motion.a
-              href="/lead-magnet.pdf"
-              download
+              href="https://paulinaodmatematyki.com/wp-content/uploads/2025/10/Bezplatny-fragment-Lamiglowki-dla-bystrej-glowki.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-green hover:bg-green-alt text-white font-bold text-lg px-8 py-5 rounded-full transition-all shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -57,19 +58,9 @@ export default function ThankYou() {
             </motion.a>
 
             <p className="text-sm text-warm-gray mt-4">
-              Plik zostanie pobrany na Twoje urządzenie
+              Darmowy fragment książki w PDF
             </p>
 
-            <div className="mt-6">
-              <a
-                href="https://paulinaodmatematyki.com/wp-content/uploads/2025/10/Bezplatny-fragment-Lamiglowki-dla-bystrej-glowki.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-green hover:text-green-alt font-semibold underline"
-              >
-                Pobierz darmowy fragment książki
-              </a>
-            </div>
           </motion.div>
         </div>
       </section>
