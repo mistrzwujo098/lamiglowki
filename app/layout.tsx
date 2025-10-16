@@ -116,7 +116,7 @@ export default function RootLayout({
         <ScrollProgress />
         {/* <TableOfContents /> */}
         <FloatingCTA />
-        {/* <ExitIntentPopup /> */}
+        <ExitIntentPopup />
         {children}
       </body>
     </html>

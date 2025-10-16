@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, Star, BookOpen, Users, Award, Clock, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { assetPath } from '@/lib/asset-path';
+import FragmentFormSection from './components/FragmentFormSection';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -1206,6 +1207,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Fragment Form Section */}
+      <FragmentFormSection />
 
       {/* Pricing Section */}
       <section id="pakiety" className="py-20 md:py-32 bg-gradient-to-br from-background to-cream relative overflow-hidden">

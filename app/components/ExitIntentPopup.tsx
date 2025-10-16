@@ -19,12 +19,17 @@ export default function ExitIntentPopup() {
       if (popupShown) return;
     }
 
-    let timeoutId: NodeJS.Timeout;
     let exitIntentTriggered = false;
+    const startTime = Date.now();
+    const MIN_TIME_ON_PAGE = 10000; // 10 sekund minimum na stronie
 
-    // Exit intent detection
+    // Exit intent detection - tylko po 10 sekundach
     const handleMouseLeave = (e: MouseEvent) => {
       if (exitIntentTriggered) return;
+
+      // Sprawdź czy minęło minimum 10 sekund
+      const timeElapsed = Date.now() - startTime;
+      if (timeElapsed < MIN_TIME_ON_PAGE) return;
 
       // Detect mouse leaving viewport at the top (trying to close tab)
       if (e.clientY <= 0) {
@@ -34,19 +39,10 @@ export default function ExitIntentPopup() {
       }
     };
 
-    // Time-based trigger (45 seconds)
-    timeoutId = setTimeout(() => {
-      if (!exitIntentTriggered) {
-        setIsVisible(true);
-        sessionStorage.setItem('exitPopupShown', 'true');
-      }
-    }, 45000);
-
     document.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
-      clearTimeout(timeoutId);
     };
   }, []);
 
@@ -61,10 +57,10 @@ export default function ExitIntentPopup() {
     setIsSubmitting(true);
 
     try {
-      // Dodaj do grupy Exit Intent / Fragment (167646643611502076)
+      // Dodaj do grupy Lead Magnet (ta sama co formularz i lead magnet)
       const result = await subscribeToNewsletter({
         email,
-        groupId: MAILERLITE_GROUPS.EXIT_INTENT,
+        groupId: MAILERLITE_GROUPS.LEAD_MAGNET,
       });
 
       if (result.success) {
