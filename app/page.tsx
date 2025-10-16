@@ -1376,7 +1376,7 @@ export default function Home() {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <Image
-                    src={assetPath("/images/paulina-ksiazka.webp")}
+                    src={assetPath("/images/paulina-zdjecie.webp")}
                     alt="Paulina - autorka książki Łamigłówki dla bystrej główki"
                     width={500}
                     height={750}
